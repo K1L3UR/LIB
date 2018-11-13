@@ -1,30 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: arnduran <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/13 22:44:14 by arnduran          #+#    #+#             */
-/*   Updated: 2018/11/13 22:44:15 by arnduran         ###   ########.fr       */
+/*   Created: 2018/11/13 21:58:05 by arnduran          #+#    #+#             */
+/*   Updated: 2018/11/13 23:26:31 by arnduran         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *str1, const void *str2, size_t n)
+char	*ft_strdup(const char *s)
 {
-	int	i;
 	char	*s1;
-	char	*s2;
+	int		i;
 
-	i = 0;
-	s1 = (char*)str1;
-	s2 = (char*)str2;
-	while (i < n)
+	i = ft_strlen(s);
+	s1 = (char *)malloc(sizeof(char) * (i + 1));
+	while (i >= 0)
 	{
-		s1[i] = s2[i];
-		i++;
+		s1[i] = s[i];
+		i--;
 	}
-	return (str1);
+	return (s1);
 }

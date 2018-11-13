@@ -1,30 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: arnduran <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/13 22:44:14 by arnduran          #+#    #+#             */
-/*   Updated: 2018/11/13 22:44:15 by arnduran         ###   ########.fr       */
+/*   Created: 2018/11/13 21:25:40 by arnduran          #+#    #+#             */
+/*   Updated: 2018/11/13 21:50:17 by arnduran         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *str1, const void *str2, size_t n)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	int	i;
-	char	*s1;
-	char	*s2;
-
+	int		i;
+	char	*str1;
+	char	*str2;
+	
+	str1 = (char *)s1;
+	str2 = (char *)s2;
 	i = 0;
-	s1 = (char*)str1;
-	s2 = (char*)str2;
 	while (i < n)
-	{
-		s1[i] = s2[i];
 		i++;
-	}
-	return (str1);
+	return (strcmp(str1, str2));
 }
