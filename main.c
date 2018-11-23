@@ -24,9 +24,25 @@ int	main(int argc, char **argv)
 	char	s4_strlen[50] = "p";
 	char	s1_strdup[50] = "bondour bondour";
 	char	s2_strdup[50] = "oni chan yamero";
+	char	dest_strcpy[50] = "bla bla bla";
+	char	dest2_strcpy[50] = "blo blo blo";
+	char	dest3_strcpy[50] = "bli bli bli";
+	char	dest4_strcpy[50] = "bl bl bl bl";
+	char	src_strcpy[50] = "je suis une phrase de test";
+	char	src2_strcpy[50] = "im a string to test strcpy";
+	char	src3_strcpy[50] = "bla bla bla 12039487";
+	char	src4_strcpy[50] = "popadddaodmzpzowjeqwer";
+	char	src_strncpy[50] = "im a string to test";
+	char	src2_strncpy[50] = "some shit to write";
+	char	dest_strncpy[50] = "blabla bla blo";
+	char	dest2_strncpy[50] = "bla bla bla";
+	char	strcat_src[50] = "phrase src";
+	char	strcat_dest[50] = "phrase dest.";
+	char	strcat_src2[50] = "789";
+	char	strcat_dest2[50] = "123456";
 
-	if (argc == 0)
-		return (0);
+//	if (argc == 0)
+//		return (0);
 /*	printf("%s\n", "ft_memset ---------------------------------");
 	strcpy(str_memset,"je suis une chaine de caracteres de memset");
 	puts(str_memset);
@@ -64,21 +80,25 @@ int	main(int argc, char **argv)
 	printf("%zu\n", strlen(s2_strlen));
 	printf("%zu\n", strlen(s3_strlen));
 	printf("%zu\n", strlen(s4_strlen));
-*/	
 	printf(" %s\n", "ft_strdup ----------------------------------");
 	printf("mine : %s\n", ft_strdup(s1_strdup));
 	printf("mine : %s\n", ft_strdup(s2_strdup));
 	printf("%s\n", strdup(s1_strdup));
 	printf("%s\n", strdup(s2_strdup));
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	printf(" %s\n", "ft_strcpy ----------------------------------");
+	printf("mine : %s\n", ft_strcpy(dest_strcpy, src_strcpy));	
+	printf("mine : %s\n", ft_strcpy(dest2_strcpy, src2_strcpy));	
+	printf("%s\n", strcpy(dest_strcpy, src_strcpy));	
+	printf("%s\n", strcpy(dest2_strcpy, src2_strcpy));	
+	printf(" %s\n", "ft_strncpy ----------------------------------");
+	printf("mine : %s\n", ft_strncpy(dest_strcpy, src_strcpy, 10));	
+	printf("mine : %s\n", ft_strncpy(dest2_strcpy, src2_strcpy, 10));	
+	printf("%s\n", strncpy(dest_strcpy, src_strcpy, 10));	
+	printf("%s\n", strncpy(dest2_strcpy, src2_strcpy, 10));	
+*/
+	printf(" %s\n", "ft_strcat ----------------------------------");
+	printf("%s\n", ft_strcat(strcat_dest, strcat_src));
+	printf("%s\n", ft_strcat(strcat_dest2, strcat_src2));
 	
 	
 	
