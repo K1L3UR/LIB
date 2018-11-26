@@ -40,7 +40,21 @@ int	main(int argc, char **argv)
 	char	strcat_dest[50] = "phrase dest.";
 	char	strcat_src2[50] = "789";
 	char	strcat_dest2[50] = "123456";
-
+	char	strncat_src[50] = "phrase src";
+	char	strncat_dest[50] = "phrase dest.";
+	char	strncat_src2[50] = "456789";
+	char	strncat_dest2[50] = "123";
+	char	strlcat_src[50] = "phrase src";
+	char	strlcat_dest[50] = "phrase dest.";
+	char	strlcat_src2[50] = "456789";
+	char	strlcat_dest2[50] = "123";
+	char	str_strchr[50] = "bonjour je suis papa";
+	char	str_strchr2[50] = "bqajo afejkhr ";
+	char	str_strchr3[50] = "blablablaeble5blabl";
+	char	str_strchr4[50] = "pppppppppppppppp963";
+	char	str_strchr5[50] = "bonjour je suis une super phrase \0 idaaur";
+	
+	
 //	if (argc == 0)
 //		return (0);
 /*	printf("%s\n", "ft_memset ---------------------------------");
@@ -95,15 +109,24 @@ int	main(int argc, char **argv)
 	printf("mine : %s\n", ft_strncpy(dest2_strcpy, src2_strcpy, 10));	
 	printf("%s\n", strncpy(dest_strcpy, src_strcpy, 10));	
 	printf("%s\n", strncpy(dest2_strcpy, src2_strcpy, 10));	
-*/
 	printf(" %s\n", "ft_strcat ----------------------------------");
 	printf("%s\n", ft_strcat(strcat_dest, strcat_src));
 	printf("%s\n", ft_strcat(strcat_dest2, strcat_src2));
-	
-	
-	
-	
-	
+	printf(" %s\n", "ft_strncat ----------------------------------");
+	printf("%s\n", ft_strncat(strncat_dest, strncat_src, 3));
+	printf("jai copier 3 caracteres");
+	printf("%s\n", ft_strncat(strncat_dest2, strncat_src2, 3));
+	printf("jai copier 3 caracteres");
+	printf(" %s\n", "ft_strlcat ----------------------------------");
+	printf("%zu\n", ft_strlcat(strncat_dest, strlcat_src, 10));
+	printf("%zu\n", ft_strlcat(strncat_dest2, strlcat_src2, 10));
+*/
+	printf(" %s\n", "ft_strchr ----------------------------------");
+	printf("%s\n", ft_strchr(str_strchr, 'p'));
+	printf("%s\n", ft_strchr(str_strchr2, 'o'));
+	printf("%s\n", ft_strchr(str_strchr3, '5'));
+	printf("%s\n", ft_strchr(str_strchr4, 'k'));
+	printf("%s\n", ft_strchr(str_strchr5, '0'));
 	
 	
 	
