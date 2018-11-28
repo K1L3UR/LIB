@@ -1,26 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: arnduran <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/26 20:23:28 by arnduran          #+#    #+#             */
-/*   Updated: 2018/11/28 21:16:15 by arnduran         ###   ########.fr       */
+/*   Created: 2018/11/28 21:55:50 by arnduran          #+#    #+#             */
+/*   Updated: 2018/11/28 22:29:01 by arnduran         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-char	*ft_strchr(const char *s, int c)
+char	*ft_strstr(const char *s, const char *to_find)
 {
-	while (*s)
+	int	i;
+	int	j;
+
+	i = 0;
+	while (s[i] != '\0')
 	{
-		if (*s == c)
-			return ((char*)s);
-		s++;	
+		j = 0;
+		while (to_find[j] == s[i + j])
+		{
+			if (to_find[i + j] == '\0')
+				return (char*)(s + i);
+			j++;
+		}
+		i++;
 	}
-	if (*s == c)
-		return ((char*)s);
-	return (NULL);
+	return (0);
 }

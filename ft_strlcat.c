@@ -6,7 +6,7 @@
 /*   By: arnduran <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/26 18:45:11 by arnduran          #+#    #+#             */
-/*   Updated: 2018/11/26 20:20:42 by arnduran         ###   ########.fr       */
+/*   Updated: 2018/11/29 00:28:36 by arnduran         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,4 +26,7 @@ size_t	ft_strlcat(char *dest, const char *src, size_t n)
 	}
 	dest[i + j] = '\0';
 	return (j);
+/*	si erreur alors 
+	return (srclength + size)
+*/
 }

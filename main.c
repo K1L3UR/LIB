@@ -53,9 +53,31 @@ int	main(int argc, char **argv)
 	char	str_strchr3[50] = "blablablaeble5blabl";
 	char	str_strchr4[50] = "pppppppppppppppp963";
 	char	str_strchr5[50] = "bonjour je suis une super phrase \0 idaaur";
+	char	str_strrchr[50] = "bonjour je suis papa";
+	char	str_strrchr2[50] = "bqajo afejkhr ";
+	char	str_strrchr3[50] = "blablablaeble5blabl";
+	char	str_strrchr4[50] = "pppppppppppppppp963";
+	char	str_strrchr5[50] = "bonjour je suis une super phrase \0 idaaur";
+	
+	char	str_strstr[50] = "bonjour bonjour xxx bonjour ";
+	char	str_strstr2[50] = "aaaaaaaaaaaaaaaa555";
+	char	str_strstr3[50] = "669969666999";
+	char	str_strstr4[50] = "ppppppppppppp";
+	char	str_strstr5[50] = "bonjour je suis une super iosdgjfskphrase idaaur";
+	char	str_tofind[50] = "xxx";
+	char	str_tofind2[50] = "555";
+	char	str_tofind3[50] = "666";
+	char	str_tofind4[50] = "ddd";
+	char	str_tofind5[50] = "xxxzz";
 	
 	
-//	if (argc == 0)
+	
+	
+	
+	
+	
+	
+	//	if (argc == 0)
 //		return (0);
 /*	printf("%s\n", "ft_memset ---------------------------------");
 	strcpy(str_memset,"je suis une chaine de caracteres de memset");
@@ -120,15 +142,25 @@ int	main(int argc, char **argv)
 	printf(" %s\n", "ft_strlcat ----------------------------------");
 	printf("%zu\n", ft_strlcat(strncat_dest, strlcat_src, 10));
 	printf("%zu\n", ft_strlcat(strncat_dest2, strlcat_src2, 10));
-*/
 	printf(" %s\n", "ft_strchr ----------------------------------");
 	printf("%s\n", ft_strchr(str_strchr, 'p'));
 	printf("%s\n", ft_strchr(str_strchr2, 'o'));
 	printf("%s\n", ft_strchr(str_strchr3, '5'));
 	printf("%s\n", ft_strchr(str_strchr4, 'k'));
 	printf("%s\n", ft_strchr(str_strchr5, '0'));
-	
-	
+	printf(" %s\n", "ft_strrchr ----------------------------------");
+	printf("%s\n", ft_strrchr(str_strchr, 'p'));
+	printf("%s\n", ft_strrchr(str_strchr2, 'o'));
+	printf("%s\n", ft_strrchr(str_strchr3, '5'));
+	printf("%s\n", ft_strrchr(str_strchr4, 'k'));
+	printf("%s\n", ft_strrchr(str_strchr5, '0'));
+*/
+	printf(" %s\n", "ft_strstr ----------------------------------");
+	printf("%s\n", strstr(str_strstr, str_tofind));
+	printf("%s\n", strstr(str_strstr2, str_tofind2));
+	printf("%s\n", strstr(str_strstr3, str_tofind3)); // erreur dans ma fonction sur ce test
+	printf("%s\n", strstr(str_strstr4, str_tofind4));
+	printf("%s\n", strstr(str_strstr5, str_tofind5));
 	
 	
 	
