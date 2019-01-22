@@ -58,7 +58,6 @@ int	main(int argc, char **argv)
 	char	str_strrchr3[50] = "blablablaeble5blabl";
 	char	str_strrchr4[50] = "pppppppppppppppp963";
 	char	str_strrchr5[50] = "bonjour je suis une super phrase \0 idaaur";
-	
 	char	str_strstr[50] = "bonjour bonjour xxx bonjour ";
 	char	str_strstr2[50] = "aaaaaaaaaaaaaaaa555";
 	char	str_strstr3[50] = "669969666999";
@@ -69,10 +68,33 @@ int	main(int argc, char **argv)
 	char	str_tofind3[50] = "666";
 	char	str_tofind4[50] = "ddd";
 	char	str_tofind5[50] = "xxxzz";
-	
-	
-	
-	
+	char	s1_strncmp[50] = "je suis une chaine de caracteres";
+	char	s2_strncmp[50] = "je suis une chaine de caracteres";
+	char	s3_strncmp[50] = "hello";
+	char	s4_strncmp[50] = "les";
+	char	s5_strncmp[50] = "123";
+	char	s6_strncmp[50] = "12";
+	char	atoi_str[50] = "213";
+	char	atoi_str1[50] = "123q123";
+	char	atoi_str2[50] = "12 2";
+	char	atoi_str3[50] = "    \t \t \r \t \n \f 123";
+	char	atoi_str4[50] = "[][][][] 1 [][][][]";
+	char	atoi_str5[50] = "\n \t \f \r \n 123";
+	char	atoi_str6[50] = "1  1 1 1 1 11 ";
+	int	is_alpha = 'a';
+	int	is_alpha2 = '1';
+	int	is_digit = '5';
+	int	is_digit2 = 'd';
+	int	is_alnum = 'a';
+	int	is_alnum2 = ';';
+	int	is_ascii = '1';
+//	char	is_ascii2 = "™";
+	int	is_print = '9';
+//	char	is_print2 = "™";
+// test memalloc
+// test memdel
+// test strnew
+
 	
 	
 	
@@ -154,21 +176,62 @@ int	main(int argc, char **argv)
 	printf("%s\n", ft_strrchr(str_strchr3, '5'));
 	printf("%s\n", ft_strrchr(str_strchr4, 'k'));
 	printf("%s\n", ft_strrchr(str_strchr5, '0'));
-*/
-	printf(" %s\n", "ft_strstr ----------------------------------");
-	printf("%s\n", strstr(str_strstr, str_tofind));
-	printf("%s\n", strstr(str_strstr2, str_tofind2));
-	printf("%s\n", strstr(str_strstr3, str_tofind3)); // erreur dans ma fonction sur ce test
-	printf("%s\n", strstr(str_strstr4, str_tofind4));
-	printf("%s\n", strstr(str_strstr5, str_tofind5));
-	
-	
-	
-	
-	
-	
-	
-	
+//	printf(" %s\n", "ft_strstr ----------------------------------");
+//	printf("%s\n", strstr(str_strstr, str_tofind));
+//	printf("%s\n", strstr(str_strstr2, str_tofind2));
+//	printf("%s\n", strstr(str_strstr3, str_tofind3)); // erreur dans ma fonction sur ce test
+//	printf("%s\n", strstr(str_strstr4, str_tofind4));
+//	printf("%s\n", strstr(str_strstr5, str_tofind5));
+	printf(" %s\n", "ft_strncmp ----------------------------------");
+	printf("reel :%d\n", strncmp(s1_strncmp, s2_strncmp, 10));
+	printf("reel :%d\n", strncmp(s3_strncmp, s4_strncmp, 10));
+	printf("reel :%d\n", strncmp(s5_strncmp, s6_strncmp, 10));
+	printf("mine :%d\n", ft_strncmp(s1_strncmp, s2_strncmp, 10));
+	printf("mine :%d\n", ft_strncmp(s3_strncmp, s4_strncmp, 10));
+	printf("mine :%d\n", ft_strncmp(s5_strncmp, s6_strncmp, 10));	
+	printf(" %s\n", "ft_atoi ----------------------------------");
+	printf("reel :%d\n", atoi(atoi_str));
+	printf("reel :%d\n", atoi(atoi_str1));
+	printf("reel :%d\n", atoi(atoi_str2));
+	printf("reel :%d\n", atoi(atoi_str3));
+	printf("reel :%d\n", atoi(atoi_str4));
+	printf("mine :%d\n", ft_atoi(atoi_str));
+	printf("mine :%d\n", ft_atoi(atoi_str1));
+	printf("mine :%d\n", ft_atoi(atoi_str2));
+	printf("mine :%d\n", ft_atoi(atoi_str3));
+	printf("mine :%d\n", ft_atoi(atoi_str4));
+*/	
+	printf(" %s\n", "ft_isalpha ----------------------------------");
+	printf("reel :%d\n", isalpha(is_alpha));
+	printf("reel :%d\n", isalpha(is_alpha2));
+	printf("mine :%d\n", ft_isalpha(is_alpha));
+	printf("mine :%d\n", ft_isalpha(is_alpha2));
+	printf(" %s\n", "ft_isdigit ----------------------------------");
+	printf("reel :%d\n", isdigit(is_digit));
+	printf("reel :%d\n", isdigit(is_digit2));
+	printf("mine :%d\n", ft_isdigit(is_digit));
+	printf("mine :%d\n", ft_isdigit(is_digit2));
+	printf(" %s\n", "ft_isalnum ----------------------------------");
+	printf("reel :%d\n", isalnum(is_alnum));
+	printf("reel :%d\n", isalnum(is_alnum2));
+	printf("mine :%d\n", ft_isalnum(is_alnum));
+	printf("mine :%d\n", ft_isalnum(is_alnum2));
+	printf(" %s\n", "ft_isascii ----------------------------------");
+	printf("reel :%d\n", isascii(is_ascii));
+//	printf("reel :%d\n", isascii(is_ascii2));
+	printf("mine :%d\n", ft_isascii(is_ascii));
+//	printf("mine :%d\n", ft_isascii(is_ascii2));
+	printf(" %s\n", "ft_isprint ----------------------------------");
+	printf("reel :%d\n", isprint(is_print));
+//	printf("reel :%d\n", isprint(is_print2));
+	printf("mine :%d\n", ft_isprint(is_print));
+//	printf("mine :%d\n", ft_isprint(is_print2));
+	ft_kirby();
+	printf(" %s\n", "ft_strnew ----------------------------------");
+//	printf("%s\n", ft_strnew(3));
+//	printf("%s\n", ft_strnew(8));
+//	printf("%s\n", ft_strnew(15));
+//	printf("%s\n", ft_strnew(30));
 	
 	
 	
