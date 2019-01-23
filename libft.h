@@ -78,5 +78,6 @@ int					ft_blank(char c);
 int					ft_strisalpha(char *str);
 int					ft_iscntrl(int c);
 int					ft_isgraph(int c);
+void				ft_kirby(void);
 
 #endif

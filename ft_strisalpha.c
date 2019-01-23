@@ -12,4 +12,4 @@ int	ft_strisalpha(char *str)
 		i++;
 	}
 	return (1);
-
+}

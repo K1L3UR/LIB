@@ -5,7 +5,7 @@ void	*ft_memset(void *ptr, int b, size_t n)
 	unsigned char *conv;
 
 	if (n == 0)
-		return (NULL);
+		return (ptr);
 	conv = (unsigned char*)ptr;
 	while (n--)
 	{

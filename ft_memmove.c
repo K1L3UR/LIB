@@ -6,7 +6,7 @@
 /*   By: arnduran <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/13 22:44:14 by arnduran          #+#    #+#             */
-/*   Updated: 2018/11/13 22:44:15 by arnduran         ###   ########.fr       */
+/*   Updated: 2019/01/23 19:34:18 by arnduran         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memmove(void *str1, const void *str2, size_t n)
 {
-	int	i;
+	size_t	i;
 	char	*s1;
 	char	*s2;
 

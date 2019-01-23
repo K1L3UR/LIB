@@ -6,7 +6,7 @@
 /*   By: arnduran <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/13 21:25:40 by arnduran          #+#    #+#             */
-/*   Updated: 2018/11/13 21:50:17 by arnduran         ###   ########.fr       */
+/*   Updated: 2019/01/23 23:35:33 by arnduran         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	int		i;
+	size_t	i;
 	char	*str1;
 	char	*str2;
 	
@@ -23,5 +23,5 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	i = 0;
 	while (i < n)
 		i++;
-	return (strcmp(str1, str2));
+	return (ft_strcmp(str1, str2));
 }
