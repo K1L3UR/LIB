@@ -6,26 +6,30 @@
 /*   By: arnduran <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/28 21:55:50 by arnduran          #+#    #+#             */
-/*   Updated: 2018/11/28 22:29:01 by arnduran         ###   ########.fr       */
+/*   Updated: 2019/01/28 18:26:00 by arnduran         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strstr(const char *s, const char *to_find)
+#include "libft.h"
+
+char	*ft_strstr(const char *big, const char *little)
 {
-	int	i;
-	int	j;
+	int i;
+	int j;
 
 	i = 0;
-	while (s[i] != '\0')
+	if (little[0] == '\0')
+		return ((char*)big);
+	while (big[i])
 	{
 		j = 0;
-		while (to_find[j] == s[i + j])
+		while (little[j] == big[i + j])
 		{
-			if (to_find[i + j] == '\0')
-				return (char*)(s + i);
+			if (little[j + 1] == '\0')
+				return ((char*)big + i);
 			j++;
 		}
 		i++;
 	}
-	return (0);
+	return (NULL);
 }

@@ -6,7 +6,7 @@
 /*   By: arnduran <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/26 20:23:28 by arnduran          #+#    #+#             */
-/*   Updated: 2018/11/28 21:16:15 by arnduran         ###   ########.fr       */
+/*   Updated: 2019/01/28 19:42:47 by arnduran         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strchr(const char *s, int c)
 	{
 		if (*s == c)
 			return ((char*)s);
-		s++;	
+		s++;
 	}
 	if (*s == c)
 		return ((char*)s);
