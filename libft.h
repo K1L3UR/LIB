@@ -6,7 +6,7 @@
 /*   By: arnduran <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/28 17:46:57 by arnduran          #+#    #+#             */
-/*   Updated: 2019/01/28 17:47:00 by arnduran         ###   ########.fr       */
+/*   Updated: 2019/01/29 20:17:37 by arnduran         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,6 +89,7 @@ int					ft_blank(char c);
 int					ft_strisalpha(char *str);
 int					ft_iscntrl(int c);
 int					ft_isgraph(int c);
+void				ft_error(int color);
 void				ft_kirby(void);
 
 #endif
